@@ -1,0 +1,106 @@
+
+body {
+ height: 100vh;
+ width: 100vw;
+ display: grid;
+ grid-template-rows: 0.22fr 1.5fr 1.5fr 0.22fr;
+ grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+}
+a {
+  text-decoration: none;
+  width: 5em;
+  height: 3em;
+  font-size: 17px;
+  color: #222;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  grid-column: 1 / 5;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+up-btn {
+  margin-top: 20px;
+}
+main {
+  background-color: #fff;
+  grid-row: 2 / 4;
+  grid-column: 1 / 5;
+  display: flex;
+}
+.search {
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  margin: 0 auto 20px auto;
+}
+#pesquisa {
+  width: 50vw;
+  max-width: 548px;
+  height: 2.5em;
+  font-size: 18px;
+  border: 1px soli #dfe1e5;
+  border-radius: 24px;
+  box-shadow: none;
+  padding: 15px;
+  outline: none;
+}
+
+#pesquisa:hover, button:hover {
+  box-shadow: -2px 6px rgb(32,33,36, 28%);
+}
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  margin: 20px auto;
+}
+button {
+  width: 12em;
+  height: 3em;
+  cursor: pointer;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+}
+footer {
+  background: #fff;
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+  background: #f2f2f2;
+}
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin-bottom: 0; */
+  /* height: 3em; */
+}
+
+.footer-buttons1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
+  margin-right: 2em;
+}
+.footer-buttons2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+#button {
+  width: 8em;
+  height: 3em;
+}
